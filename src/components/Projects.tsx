@@ -11,7 +11,7 @@ const projects = [
     {
         id: "products-page",
         title: "Products Page Frontend App",
-        category: "Full-Stack Signal",
+        category: "Frontend",
         description: "A simple e-commerce products listing page that fetches products from backend APIs and supports filtering.",
     },
     {
