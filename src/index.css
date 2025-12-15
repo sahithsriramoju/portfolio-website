@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;600;700&display=swap');
+
+@theme {
+    --color-slate-50: #F9F8F4;
+    --color-slate-900: #101010;
+    --color-accent: #FF4D00;
+
+    --font-display: "Oswald", sans-serif;
+    --font-body: "Inter", sans-serif;
+}
+
+@layer base {
+    body {
+        @apply bg-slate-50 text-slate-900 font-body antialiased selection:bg-accent selection:text-white;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-display tracking-tight uppercase;
+    }
+
+    /* Custom Animations */
+    @keyframes reveal-up {
+        from {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes expand-width {
+        from {
+            transform: scaleX(0);
+        }
+
+        to {
+            transform: scaleX(1);
+        }
+    }
+
+    .animate-reveal {
+        animation: reveal-up 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        opacity: 0;
+    }
+
+    .animate-line {
+        animation: expand-width 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    .delay-100 {
+        animation-delay: 100ms;
+    }
+
+    .delay-200 {
+        animation-delay: 200ms;
+    }
+
+    .delay-300 {
+        animation-delay: 300ms;
+    }
+
+    .delay-500 {
+        animation-delay: 500ms;
+    }
+}
