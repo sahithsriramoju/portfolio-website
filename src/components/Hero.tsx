@@ -36,7 +36,7 @@ const Hero = () => {
                     {/* Intro Text Block */}
                     <div className="overflow-visible">
                         <motion.h1
-                            className="text-[3.5vw] lg:text-[42px] leading-tight font-black uppercase tracking-tighter text-slate-900"
+                            className="text-3xl lg:text-[42px] leading-tight font-black uppercase tracking-tighter text-slate-900"
                             variants={sentence}
                             initial="hidden"
                             animate="visible"
