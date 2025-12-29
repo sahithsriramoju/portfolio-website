@@ -16,7 +16,7 @@ const Contact = () => {
                     <a href="https://www.linkedin.com/in/sahithi-sriramoju/" target="_blank" rel="noopener noreferrer" className="text-xl md:text-2xl font-bold hover:text-accent transition-colors">
                         LinkedIn
                     </a>
-                    <a href="https://github.com/sahithsriramoju" target="_blank" rel="noopener noreferrer" className="text-xl md:text-2xl font-bold hover:text-accent transition-colors">
+                    <a href="https://github.com/sahithisriramoju23" target="_blank" rel="noopener noreferrer" className="text-xl md:text-2xl font-bold hover:text-accent transition-colors">
                         GitHub
                     </a>
                 </div>
